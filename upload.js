@@ -17,6 +17,8 @@ var fileName = 'tiger.jpg'
 fs.readFile(path.join(__dirname, fileName), (err, data) => {
   if(err) throw err;
 
+  // we need data, fileName
+
   var ext = fileName.split('.').pop();
   var key = uuid() + `.${ext}`;
 
